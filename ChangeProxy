@@ -1,0 +1,188 @@
+/*
+** automatic proxy configuration
+** generated for 146.122.219.171
+** from cyp-proxyconf.net.plm.eds.com
+** based on proxy.pac.brown
+*/
+
+function FindProxyForURL(url, host)
+{
+        // strings to return for proxying from PLdev (BROWN) to Siemens SNX
+
+        var proxy_yes = "PROXY pun-fsrprx.net.plm.eds.com:2020; PROXY cyp-fsrprx.net.plm.eds.com:2020";
+        var proxy_no  = "DIRECT";
+
+        if (isPlainHostName(host)) { return proxy_no; }
+        if (shExpMatch(url, "*guestnet.ugs.com*")) { return proxy_yes; }
+        if (shExpMatch(url, "*guestnet.net.plm.eds.com.com*")) { return proxy_yes; }
+        if (shExpMatch(url, "*plnoc.ugs.com*")) { return proxy_yes; }
+        if (shExpMatch(url, "*plnoc.net.plm.eds.com.com*")) { return proxy_yes; }
+        if (shExpMatch(url, "*noc*.ugs.com*")) { return proxy_yes; }
+        if (shExpMatch(url, "*noc*.net.plm.eds.com*")) { return proxy_yes; }
+        if (shExpMatch(host, "*.public.siemens.com*")) { return proxy_no; }
+	if (shExpMatch(host, "solidedge.siemens.com")) { return proxy_no; }
+	if (shExpMatch(host, "cert-portal.siemens.com")) { return proxy_no; }
+	if (shExpMatch(host, "emmtc.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "newsletter-yp.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "redirect-yp.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "mailings-yp.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "registration-yp.siemens.com")) { return proxy_no; }
+	if (shExpMatch(host, "myvideo.siemens.com")) { return proxy_no; }
+	if (shExpMatch(host, "soc2-beta.siemens.com")) { return proxy_no; }
+	if (shExpMatch(host, "circuit.siemens.com")) { return proxy_no; }
+	if (shExpMatch(host, "*.circuit.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "selfreg.smartstorage.siemens.com")) { return proxy_yes; }
+        if (shExpMatch(host, "*.smartstorage.siemens.com")) { return proxy_no; }
+	if (shExpMatch(url, "*//intrapreneurs.siemens.com*")) { return proxy_yes; }
+        if (shExpMatch(url, "*press.siemens.us*")) { return proxy_no; }
+	if (shExpMatch(url, "*autodiscover.siemens.com*")) { return proxy_no; }
+	if (shExpMatch(host, "plm.automation.siemens.com")) { return proxy_no; }
+	if (shExpMatch(host, "*.plm.automation.siemens.com")) { return proxy_no; }
+	if (shExpMatch(url, "*workspace.siemens.com.cn*")) { return proxy_yes; }
+	if (shExpMatch(host, "intranet2.siemens.com.cn")) { return proxy_yes; }
+	if (shExpMatch(host, "*.siemens.com.cn")) { return proxy_yes; }
+        if (shExpMatch(host, "jamf.splm.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "jamftest.splm.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "industrysoftware.automation.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "*.industrysoftware.automation.siemens.com")) { return proxy_no; }
+        if (shExpMatch(url, "*//mentor-lic-denbg01.siemens.net*")) { return proxy_yes; } 
+        if (shExpMatch(url, "https://ura.siemens.us*")) { return proxy_no; }
+        if (shExpMatch(url, "https://wts.automation.siemens.com*")) { return proxy_no; }
+	if (shExpMatch(host, "*.sws.siemens.com")) { return proxy_no; }
+	if (shExpMatch(host, "*.sw.siemens.com")) { return proxy_no; }
+        if (shExpMatch(url, "*www.siemensidcenter.com*")) { return proxy_no; }
+        if (shExpMatch(url, "*www.siemens.com*")) { return proxy_no; }
+        if (shExpMatch(url, "*vdimes.siemens.com*")) { return proxy_no; }
+        if (shExpMatch(url, "*vcloudmes.siemens.com*")) { return proxy_no; }
+	if (shExpMatch(url, "*//code.siemens.com*")) { return proxy_yes; }
+        if (shExpMatch(url, "*vcloudproxymes.siemens.com*")) { return proxy_no; }
+        if (shExpMatch(url, "*172.27.0.*")) { return proxy_no; }
+        if (shExpMatch(host, "www.talentclick.siemens.com.cn")) { return proxy_no; }
+        if (shExpMatch(host, "ch.siemens.com")) { return proxy_no; }
+	if (shExpMatch(host, "cl.siemens.com")) { return proxy_no; }
+	if (shExpMatch(host, "myshare.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "jira-gdmc.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "confluence-gdmc.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "jira-gdmc-test.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "confluence-gdmc-test.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "benefitsnews.siemens.us")) { return proxy_no; }
+        if (shExpMatch(host, "brandville.siemens.com")) { return proxy_no; }
+        if (shExpMatch(url, "*enterprise.usa.siemens.com*")) { return proxy_no; }
+        if (shExpMatch(url, "*www.siemensenterprise.com*")) { return proxy_no; }
+        if (shExpMatch(url, "*www.cert.siemens.com*")) { return proxy_yes; }
+        if (shExpMatch(host, "*www.training.siemens.com*")) { return proxy_yes; }
+        if (shExpMatch(host, "www.restaurant-services.realestate.siemens.com")) { return proxy_yes; }
+        if (shExpMatch(url, "*//intranet.sle.siemens*")) { return proxy_yes; }
+	if (shExpMatch(host, "www.sitrain-learning.siemens.com")) { return proxy_yes; }
+        if (shExpMatch(host, "login.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "*.login.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "login-qa.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "*.login-qa.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "login-dev.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "*.login-dev.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "myid*.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "*.myid.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "myid-qa.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "*.myid-qa.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "myid-dev.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "*.myid-dev.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "hello.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "*.hello.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "ingenuity.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "*.ingenuity.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "peg.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "peg-author.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "spirotec-digitalwin.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "*.spirotec-digitalwin.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "siecure.siemens.com")) { return proxy_no; }
+	if (shExpMatch(host, "www.hrsp.siemens.com")) { return  proxy_no; }
+//        if (shExpMatch(url, "*www.*.siemens.com*")) { return proxy_no; }
+        if (shExpMatch(url, "*www.ttb.siemens.com*")) { return proxy_no; }
+        if (shExpMatch(url, "*www.scr.siemens.com*")) { return proxy_no; }
+        if (shExpMatch(url, "*//intranet.siemens.*")) { return proxy_yes; }
+        if (shExpMatch(host, "*intranet.sle.siemens.com*")) { return proxy_yes; }
+        if (shExpMatch(url, "*//intranet.cms.siemens*")) { return proxy_yes; }
+        if (shExpMatch(host, "intranet.w1.siemens.com")) { return proxy_yes; }
+        if (shExpMatch(host, "*.siemens.co.in")) { return proxy_yes; }
+        if (shExpMatch(host, "w1.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "www.industry.siemens.com")) { return proxy_yes; }
+        if (shExpMatch(host, "enterprise.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "llp.sle.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "irc.siemens.de")) { return proxy_yes; }
+        if (shExpMatch(host, "lc-evaluation.erlm.siemens.de")) { return proxy_yes; }
+        if (shExpMatch(url, "*extranet.cms.siemens.com*")) { return proxy_no; }
+        if (shExpMatch(url, "*extranet-us.siemens.com*")) { return proxy_no; }
+        if (shExpMatch(url, "*pia.khe.siemens.com*")) { return proxy_no; }
+        if (shExpMatch(host, "ucjoin.bmwgroup.net")) { return  proxy_yes; }
+        if (shExpMatch(host, "solutionlink.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "dc.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "*.dc.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "references.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "*.references.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "new.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "*.new.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "digitalcommunity.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "ucamerfrepoolws01.bmwgroup.net")) { return  proxy_yes; }
+//        if (shExpMatch(host, "event.on24.com")) { return proxy_yes; }
+//        if (shExpMatch(host, "*sip.siemens.com*")) { return proxy_no; }
+//        if (shExpMatch(host, "*webedge.siemens.com*")) { return proxy_no; }
+//        if (shExpMatch(host, "*webedge-*.siemens.com*")) { return proxy_no; }
+//        if (shExpMatch(host, "*avedge.siemens.com*")) { return proxy_no; }
+//        if (shExpMatch(host, "*avedge-*.siemens.com*")) { return proxy_no; }
+//        if (shExpMatch(host, "*isaedge.siemens.com*")) { return proxy_no; }
+//        if (shExpMatch(host, "*isaedge*.siemens.com*")) { return proxy_no; }
+//        if (shExpMatch(host, "on24.fc.llnwd.net")) { return proxy_yes; }
+//        if (shExpMatch(host, "on24livefs.fplive.net")) { return proxy_yes; }
+//        if (shExpMatch(host, "fml.7ac7.edgcastcdn.net")) { return proxy_yes; }
+//        if (shExpMatch(host, "amshdsa.on24.com.edgesuite.net")) { return proxy_yes; }
+//        if (shExpMatch(host, "amshdsb.on24.com.edgesuite.net")) { return proxy_yes; }
+	if (shExpMatch(host, "gtac-cloud-console.de.hca.siemens.com")) { return proxy_no; }
+	if (shExpMatch(host, "gtac-cloud.de.hca.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "energy.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "www.energy.siemens.com")) { return proxy_no; }
+        if (shExpMatch(host, "remoteservices11-mss-bt.usa.siemens.com")) { return proxy_no; }
+        if (shExpMatch(url, "*.siemens.net*")) { return proxy_yes; }
+        if (shExpMatch(host, "siemens.com")) { return proxy_yes; }
+        if (shExpMatch(host, "*.siemens.com")) { return proxy_yes; }
+        if (shExpMatch(host, "*.siemens.de*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.sbs.de*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.siemens.at*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.siemens.ca*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.siemens.ch*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.siemens.dk*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.siemens.es*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.siemens.cn*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.siemens.cz*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.siemens.fr*")) { return proxy_yes; }
+        if (shExpMatch(url, "*cafedesindustries.siemens.fr*")) { return proxy_no; }
+        if (shExpMatch(url, "*.siemens.gr*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.siemens.jp*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.siemens.pl*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.siemens.pt*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.siemens.ro*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.siemens.ru*")) { return proxy_yes; }
+        if (shExpMatch(host, "www.siemens.se")) { return proxy_no; }
+        if (shExpMatch(url, "*.siemens.se*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.siemens.sk*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.siemens.us*")) { return proxy_yes; }
+        if (shExpMatch(host, "*siemens.nl*")) { return proxy_yes; }
+        if (shExpMatch(host, "*siemens.be*")) { return proxy_yes; }
+        if (shExpMatch(host, "*.siemens.io")) { return proxy_yes; }
+        if (shExpMatch(url, "*.siemens.co.uk*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.siemens.co.jp*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.siemens.co.za*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.s-partners.net*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.fueruns-shop.de*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.siemens.com.ar*")) { return proxy_yes; }
+        if (shExpMatch(url, "*.siemens.com.sg*")) { return proxy_yes; }
+        if (shExpMatch(host, "*.windad.org")) { return proxy_yes; }
+        if (shExpMatch(url, "*132.186.79.41*")) { return proxy_yes; }
+        if (shExpMatch(host, "*.google.cn")) { return proxy_yes; }
+        if (shExpMatch(host, "google.cn")) { return proxy_yes; }
+        if (shExpMatch(host, "*.siemens.cloud")) { return proxy_yes; }
+        // ...etc.
+
+        // Don't proxy anything else
+        return proxy_no;
+}
+
